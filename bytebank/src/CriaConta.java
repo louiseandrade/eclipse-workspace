@@ -1,16 +1,14 @@
-package bytebank;
-
 public class CriaConta {
 
     public static void main(String[] args) {
-        Conta primeiraConta = new Conta(6646,969060);
+        Conta primeiraConta = new Conta();
         primeiraConta.deposita(200);
         System.out.println(primeiraConta.getSaldo());
 
         primeiraConta.deposita(100);
         System.out.println(primeiraConta.getSaldo());
 
-        Conta segundaConta = new Conta(6645,969061);
+        Conta segundaConta = new Conta();
         segundaConta.deposita(50);
 
         System.out.println("primeira conta tem " + primeiraConta.getSaldo());
